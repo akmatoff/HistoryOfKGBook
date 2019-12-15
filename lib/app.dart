@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'pages/home/home.dart';
 import 'pages/articles/articles.dart';
+import 'pages/about.dart';
 
 class App extends StatelessWidget {
   @override 
@@ -13,6 +14,7 @@ class App extends StatelessWidget {
         ),
       routes: <String, WidgetBuilder> {
         "/Articles": (BuildContext context) => Articles(),
+        "/About": (BuildContext context) => About(),
       }
       );
   }

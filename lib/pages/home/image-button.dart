@@ -6,15 +6,19 @@ import 'package:flutter/rendering.dart';
 class ImageButton extends StatelessWidget {
   final String _assetPath;
   final String _buttonText;
+  final String _route;
 
-  ImageButton(this._assetPath, this._buttonText);
+  ImageButton(this._assetPath, this._buttonText, this._route);
 
   @override 
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
+      children: <Widget>[
+          GestureDetector(
+            onTap: () => {Navigator.of(context).pushNamed(_route)},
+            child:
         Stack(
           alignment: Alignment.center,
           children: [
@@ -40,14 +44,15 @@ class ImageButton extends StatelessWidget {
                 color: Color.fromARGB(255, 0, 0, 0),
                 blurRadius: 4.0,
                 offset: Offset(2.0, 2.0),
-                )
-            ]
+                ),
+            ],
           ),
-        ),
-        ),
+          ),
+        )
           ],
         ),
-      ],
+          ),
+          ],
     );
   }
 }
