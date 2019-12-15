@@ -7,7 +7,10 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Home(),
-      theme: ThemeData(primaryColor: Colors.red[600],),
+      theme: ThemeData(
+        primaryColor: Colors.red[600],
+        fontFamily: 'Blogger',
+        ),
       routes: <String, WidgetBuilder> {
         "/Articles": (BuildContext context) => Articles(),
       }

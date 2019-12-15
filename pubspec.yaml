@@ -68,10 +68,9 @@ flutter:
   #         weight: 700
 
   fonts:
-    - family: AvenirLTStd
+    - family: Blogger
       fonts:
-        - asset: assets/fonts/AvenirLTStd-Heavy.otf
-        - asset: assets/fonts/AvenirLTStd-HeavyOblique.otf
+        - asset: assets/fonts/Blogger Sans-Bold.ttf
 
   #
   # For details regarding fonts from package dependencies,

@@ -1,3 +1,5 @@
+import 'dart:ui' as prefix0;
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
@@ -17,6 +19,12 @@ class ImageButton extends StatelessWidget {
           alignment: Alignment.center,
           children: [
         Container(
+          decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.black87,
+              width: 1.2,
+            ),
+          ),
           constraints: BoxConstraints.expand(height: 160.0,),
           child: Image.asset(_assetPath, fit: BoxFit.cover),
         ),
@@ -27,7 +35,6 @@ class ImageButton extends StatelessWidget {
           style: TextStyle(
             color: Colors.white,
             fontSize: 22.0,
-            fontFamily: 'AvenirLTStd',
             shadows: <Shadow>[
               Shadow(
                 color: Color.fromARGB(255, 0, 0, 0),
