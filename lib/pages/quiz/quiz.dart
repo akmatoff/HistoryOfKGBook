@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class Persons extends StatelessWidget {
+class Quiz extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Scaffold();

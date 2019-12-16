@@ -16,8 +16,8 @@ class Home extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           ImageButton("assets/images/home-pic1.jpg", "ПАРАГРАФЫ","/Articles"),
-          ImageButton("assets/images/home-pic2.jpg", "ИСТОРИЧЕСКИЕ ЛИЧНОСТИ", ""),
-          ImageButton("assets/images/home-pic4.jpg", "ТЕСТИРОВАНИЕ", ""),
+          ImageButton("assets/images/home-pic2.jpg", "ИСТОРИЧЕСКИЕ ЛИЧНОСТИ", "/Persons"),
+          ImageButton("assets/images/home-pic4.jpg", "ТЕСТИРОВАНИЕ", "/Quiz"),
           ImageButton("assets/images/home-pic3.jpg", "О ПРИЛОЖЕНИИ", "/About"),
         ],
       )
