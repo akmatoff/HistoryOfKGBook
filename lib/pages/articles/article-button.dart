@@ -10,22 +10,23 @@ class ArticleButton extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Column(
-      mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         GestureDetector(
           onTap: () => {Navigator.of(context).pushNamed(_route)},
           child: Stack(
+            alignment: Alignment.center,
             children: [
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.black87,
-                    width: 1.2,
+                    width: 1.7,
                     ),
                 ),
                 constraints: BoxConstraints.expand(height: 120.0,),
-                child: Image.asset(_assetPath, fit: BoxFit.cover),
+                child: Image.asset(_assetPath, fit: BoxFit.cover, alignment: Alignment.center,),
               ),
               Center(
                 child: Text(
