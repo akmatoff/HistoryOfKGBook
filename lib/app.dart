@@ -4,6 +4,7 @@ import 'pages/articles/articles.dart';
 import 'pages/about.dart';
 import 'pages/persons/persons.dart';
 import 'pages/quiz/quiz.dart';
+import 'pages/articles/article1.dart';
 
 class App extends StatelessWidget {
   @override 
@@ -19,6 +20,7 @@ class App extends StatelessWidget {
         "/About": (BuildContext context) => About(),
         "/Quiz": (BuildContext context) => Quiz(),
         "/Persons": (BuildContext context) => Persons(),
+        "/Articles/article1": (BuildContext context) => Article1(),
       }
       );
   }
