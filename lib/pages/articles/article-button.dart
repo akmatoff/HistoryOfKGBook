@@ -14,7 +14,7 @@ class ArticleButton extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         GestureDetector(
-          onTap: () => {Navigator.of(context).pushNamed(_route)},
+          onTap: () => Navigator.of(context).pushNamed(_route),
           child: Stack(
             alignment: Alignment.center,
             children: [
