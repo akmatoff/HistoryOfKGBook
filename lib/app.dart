@@ -12,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       home: Home(),
       theme: ThemeData(
-        primaryColor: Colors.red[600],
+        primaryColor: Colors.teal,
         fontFamily: 'Blogger',
         ),
       routes: <String, WidgetBuilder> {

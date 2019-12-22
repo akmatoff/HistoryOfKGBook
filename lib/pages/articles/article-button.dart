@@ -21,7 +21,7 @@ class ArticleButton extends StatelessWidget {
               Container(
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: Colors.black87,
+                    color: Colors.black,
                     width: 1.7,
                     ),
                 ),
