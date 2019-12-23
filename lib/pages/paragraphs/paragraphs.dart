@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'article-button.dart';
+import 'paragraph-button.dart';
 
 class Articles extends StatelessWidget {
   @override 
@@ -11,7 +11,7 @@ class Articles extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: <Widget>[
-            ArticleButton("assets/images/article-pic1.jpg", "ПАРАГРАФ №1", "/Articles/article1"),
+            ArticleButton("assets/images/article-pic1.jpg", "§1. История как наука", "/Articles/article1"),
             ArticleButton("assets/images/article-pic2.jpg", "ПАРАГРАФ №2", "/Articles/article1"),
             ArticleButton("assets/images/article-pic3.jpg", "ПАРАГРАФ №3", "/Articles/article1"),
             ArticleButton("assets/images/article-pic4.jpg", "ПАРАГРАФ №4", "/Articles/article1"),

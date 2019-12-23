@@ -33,7 +33,7 @@ class ArticleButton extends StatelessWidget {
                   _buttonText,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 17.0,
+                    fontSize: 19.0,
                     shadows: <Shadow>[
                       Shadow(
                         color: Color.fromARGB(255, 0, 0, 0),

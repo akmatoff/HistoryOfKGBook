@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'pages/home/home.dart';
-import 'pages/articles/articles.dart';
+import 'pages/paragraphs/paragraphs.dart';
 import 'pages/about.dart';
 import 'pages/persons/persons.dart';
 import 'pages/quiz/quiz.dart';
-import 'pages/articles/article1.dart';
+import 'pages/paragraphs/paragraph1.dart';
 
 class App extends StatelessWidget {
   @override 
