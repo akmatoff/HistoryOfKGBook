@@ -71,6 +71,12 @@ flutter:
     - family: Blogger
       fonts:
         - asset: assets/fonts/Blogger Sans-Bold.ttf
+    - family: Georgia
+      fonts:
+        - asset: assets/fonts/Georgia.ttf
+    - family: Helvetica
+      fonts:
+        - asset: assets/fonts/Helvetica Cyrillic Upright.ttf        
 
   #
   # For details regarding fonts from package dependencies,

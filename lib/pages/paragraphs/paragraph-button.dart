@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class ArticleButton extends StatelessWidget {
+class ParagraphButton extends StatelessWidget {
   final String _assetPath;
   final String _buttonText;
   final String _route;
 
-  ArticleButton(this._assetPath, this._buttonText, this._route);
+  ParagraphButton(this._assetPath, this._buttonText, this._route);
 
   @override 
   Widget build(BuildContext context) {

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import '../models/paragraph.dart';
+import '../../models/paragraph1-model.dart';
 
-class Article1 extends StatelessWidget {
+class Paragraph1 extends StatelessWidget {
+  final Paragraph _paragraph = new Paragraph();
   @override 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -12,20 +13,30 @@ class Article1 extends StatelessWidget {
         SingleChildScrollView(
           child:
         Container(
-          padding: EdgeInsets.fromLTRB(12.0, 12.0, 12.0, 12.0),
+          padding: EdgeInsets.all(15.0),
           child:
           Column(
             children: [ 
-              Text(
-            """
-История – одна из древнейших и увлекательнейших областей человеческого  знания, духовной культуры. В рейтинговой таблице ЮНЕСКО  история занимает четвёртое место среди современных наук. «История» – древнегреческое слово. В переводе оно означает «исследование», «повествование» и «рассказ о прошедших событиях». «Отцом истории» считается Геродот,  живший в Древней Греции в V в. до н. э. Геродот, древнегреческий историк, отец исторической науки. Геродот Галикарнасский (484 – 425 до н. э.) – древнегреческий историк, автор первого полномасштабного исторического трактата – «Истории», – описывающего греко-персидские войны и обычаи многих современных его автору народов. Труды Геродота имели огромное значение для античной культуры. Цицерон назвал его “отцом истории”. Его «История» – чрезвычайно важный источник сведений о Великой Скифии, включавший в себя информацию о жизни наших далёких предков.
-            """,
-            style: TextStyle(
-              fontSize: 20.0,
-              color: Colors.black87,
-            ),
-            textAlign: TextAlign.justify,
-          ),
+              Text(_paragraph.text,
+                style: TextStyle(
+                  fontFamily: 'Helvetica',
+                  fontSize: 18.0,
+                  letterSpacing: 0.5,
+                  color: Colors.black87,
+                ),
+              ),
+              Container(
+                constraints: BoxConstraints.expand(height: 30.0),
+                child: Image.asset(_paragraph.imagePath, fit: BoxFit.cover),
+              ),
+              Text(_paragraph.text2,
+                style: TextStyle(
+                  fontFamily: 'Helvetica',
+                  fontSize: 18.0,
+                  letterSpacing: 0.5,
+                  color: Colors.black87,
+                ),
+              ),
         ],
           ),
         ),

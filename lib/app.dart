@@ -10,17 +10,18 @@ class App extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Home(),
       theme: ThemeData(
         primaryColor: Colors.teal,
         fontFamily: 'Blogger',
         ),
       routes: <String, WidgetBuilder> {
-        "/Articles": (BuildContext context) => Articles(),
+        "/Paragraphs": (BuildContext context) => Paragraphs(),
         "/About": (BuildContext context) => About(),
         "/Quiz": (BuildContext context) => Quiz(),
         "/Persons": (BuildContext context) => Persons(),
-        "/Articles/article1": (BuildContext context) => Article1(),
+        "/Paragraphs/Paragraph1": (BuildContext context) => Paragraph1(),
       }
       );
   }
