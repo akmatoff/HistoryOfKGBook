@@ -43,6 +43,8 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/
+    - assets/images/paragraphs/
+    - assets/images/paragraphs/paragraph1/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
@@ -74,9 +76,9 @@ flutter:
     - family: Georgia
       fonts:
         - asset: assets/fonts/Georgia.ttf
-    - family: Helvetica
-      fonts:
-        - asset: assets/fonts/Helvetica Cyrillic Upright.ttf        
+    # - family: Helvetica
+    #   fonts:
+    #     - asset: assets/fonts/Helvetica Cyrillic Upright.ttf        
 
   #
   # For details regarding fonts from package dependencies,
