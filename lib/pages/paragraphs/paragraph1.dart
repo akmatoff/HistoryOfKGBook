@@ -5,6 +5,7 @@ class Paragraph1 extends StatelessWidget {
   final Paragraph _paragraph = new Paragraph();
   @override 
   Widget build(BuildContext context) {
+    final width = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text('§1. История как наука'),
@@ -20,7 +21,7 @@ class Paragraph1 extends StatelessWidget {
               Text(_paragraph.text,
                 style: TextStyle(
                   fontFamily: 'Georgia',
-                  fontSize: 18.0,
+                  fontSize: 17.0,
                   letterSpacing: 0.5,
                   color: Colors.black87,
                 ),
@@ -29,7 +30,7 @@ class Paragraph1 extends StatelessWidget {
               Text(_paragraph.text2,
                 style: TextStyle(
                   fontFamily: 'Georgia',
-                  fontSize: 18.0,
+                  fontSize: 17.0,
                   letterSpacing: 0.5,
                   color: Colors.black87,
                 ),
@@ -37,7 +38,7 @@ class Paragraph1 extends StatelessWidget {
               Text(_paragraph.text3,
                 style: TextStyle(
                   fontFamily: 'Georgia',
-                  fontSize: 18.0,
+                  fontSize: 17.0,
                   letterSpacing: 0.5,
                   color: Colors.black87,
                 ),
@@ -62,9 +63,9 @@ class Paragraph1 extends StatelessWidget {
               SizedBox(height: 15.0,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                mainAxisSize: MainAxisSize.max,
                 children: <Widget>[
                   Container(
-                    width: 190.0,
                     padding: EdgeInsets.all(5.0),
                     decoration: BoxDecoration(
                       border: Border.all(width: 1.0, color: Colors.black87),
@@ -102,9 +103,10 @@ class Paragraph1 extends StatelessWidget {
               SizedBox(height: 15.0,),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: <Widget>[
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[   
                   Container(
-                    width: 190.0,
+                    width: 160.0,
                     height: 545.0,
                     padding: EdgeInsets.all(5.0),
                     decoration: BoxDecoration(
