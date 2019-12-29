@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import '../../models/paragraph1-model.dart';
+import '../../style.dart';
 
 class Paragraph1 extends StatelessWidget {
   final Paragraph _paragraph = new Paragraph();
   @override 
   Widget build(BuildContext context) {
-    final width = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
         title: Text('§1. История как наука'),
@@ -17,32 +17,11 @@ class Paragraph1 extends StatelessWidget {
           padding: EdgeInsets.all(10.0),
           child:
           Column(
-            children: [ 
-              Text(_paragraph.text,
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  fontSize: 17.0,
-                  letterSpacing: 0.5,
-                  color: Colors.black87,
-                ),
-              ),
+            children: [
+              Text(_paragraph.text, style: paragraphTextStyle),
               Image.asset(_paragraph.imagePath),
-              Text(_paragraph.text2,
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  fontSize: 17.0,
-                  letterSpacing: 0.5,
-                  color: Colors.black87,
-                ),
-              ),
-              Text(_paragraph.text3,
-                style: TextStyle(
-                  fontFamily: 'Georgia',
-                  fontSize: 17.0,
-                  letterSpacing: 0.5,
-                  color: Colors.black87,
-                ),
-              ),
+              Text(_paragraph.text2, style: paragraphTextStyle),
+              Text(_paragraph.text3, style: paragraphTextStyle),
               Container(
                 alignment: Alignment.center,
                 padding: EdgeInsets.all(5.0),
@@ -52,12 +31,7 @@ class Paragraph1 extends StatelessWidget {
                 child: Text(
                   _paragraph.table1Header,
                   textAlign: TextAlign.center,
-                  style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.5,
-                    color: Colors.black87,
-                  ),
+                  style: paragraphTextStyle,
                 ),
               ),
               SizedBox(height: 15.0,),
@@ -73,12 +47,7 @@ class Paragraph1 extends StatelessWidget {
                     child: Text(                  
                       _paragraph.table1Left,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.5,
-                    color: Colors.black87,
-                      ),
+                      style: paragraphTextStyle,
                     ),
                     ),
                     Container(
@@ -90,13 +59,7 @@ class Paragraph1 extends StatelessWidget {
                     child: Text(                  
                       _paragraph.table1Right,
                       textAlign: TextAlign.center,
-                      style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.5,
-                    color: Colors.black87,
-                      ),
-                    ),
+                      style: paragraphTextStyle),
                     ),
                 ],
               ),
@@ -112,15 +75,7 @@ class Paragraph1 extends StatelessWidget {
                     decoration: BoxDecoration(
                       border: Border.all(width: 1.0, color: Colors.black87),
                     ),
-                    child: Text(                  
-                      _paragraph.table1LeftText,
-                      style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.2,
-                    color: Colors.black87,
-                      ),
-                    ),
+                    child: Text(_paragraph.table1LeftText, style: paragraphTextStyle),
                     ),
                     Container(
                       width: 190.0,
@@ -129,33 +84,13 @@ class Paragraph1 extends StatelessWidget {
                       decoration: BoxDecoration(
                         border: Border.all(width: 1.0, color: Colors.black87),
                       ),
-                    child: Text(                  
-                      _paragraph.table1RightText,
-                      style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.2,
-                    color: Colors.black87,
-                      ),
-                    ),
+                    child: Text(_paragraph.table1RightText, style: paragraphTextStyle),
                     ),
                 ],
               ),
               SizedBox(height: 15.0,),
-              Container(
-                padding: EdgeInsets.all(8.0),
-                decoration: BoxDecoration(
-                        border: Border.all(width: 1.0, color: Colors.black87),
-                      ),
-                child: Text(                  
-                      _paragraph.text4,
-                      style: TextStyle(
-                    fontFamily: 'Georgia',
-                    fontSize: 17.0,
-                    letterSpacing: 0.2,
-                    color: Colors.black87,
-                      ),
-                ),
+              FrameStyle(
+                Text(_paragraph.text4, style: paragraphTextStyle),
               ),
         ],
           ),
