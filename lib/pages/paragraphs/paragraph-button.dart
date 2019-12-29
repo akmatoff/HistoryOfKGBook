@@ -28,13 +28,25 @@ class ParagraphButton extends StatelessWidget {
                 constraints: BoxConstraints.expand(height: 120.0,),
                 child: Image.asset(_assetPath, fit: BoxFit.cover, alignment: Alignment.center,),
               ),
+              SizedBox(
+              height: 120.0,
+              child: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.black,
+                    width: 1.2,
+                  ),
+                  color: Colors.teal.withOpacity(0.35),
+                ),
+              ),
+            ),
               Center(
                 child: Text(
                   _buttonText,
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
-                    fontSize: 19.0,
+                    fontSize: 16.5,
                     shadows: <Shadow>[
                       Shadow(
                         color: Color.fromARGB(255, 0, 0, 0),

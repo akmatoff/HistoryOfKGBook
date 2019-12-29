@@ -37,7 +37,7 @@ class ImageButton extends StatelessWidget {
                     color: Colors.black,
                     width: 1.2,
                   ),
-                  color: Colors.teal.withOpacity(0.13),
+                  color: Colors.teal.withOpacity(0.20),
                 ),
               ),
             ),
