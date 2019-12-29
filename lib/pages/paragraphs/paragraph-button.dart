@@ -31,14 +31,15 @@ class ParagraphButton extends StatelessWidget {
               Center(
                 child: Text(
                   _buttonText,
+                  textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 19.0,
                     shadows: <Shadow>[
                       Shadow(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        blurRadius: 3.5,
-                        offset: Offset(1.5, 1.5),
+                        blurRadius: 2.0,
+                        offset: Offset(3.5, 1.5),
                         ),
                     ]
                   )
