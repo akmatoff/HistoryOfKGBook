@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931587616553",
+    "firebase_url": "https://flutter-history-book.firebaseio.com",
+    "project_id": "flutter-history-book",
+    "storage_bucket": "flutter-history-book.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931587616553:android:12b0e19dc9eb3c7b825138",
+        "android_client_info": {
+          "package_name": "com.example.historyofkgbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931587616553-9g9lkvaml1fdb8mqcmvcuk3e89hevu5t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPRCVXzo8ljcWuLc74JuZ7XX_CHzhv8II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931587616553-9g9lkvaml1fdb8mqcmvcuk3e89hevu5t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
