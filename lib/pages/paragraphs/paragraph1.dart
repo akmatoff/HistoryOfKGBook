@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../../models/paragraph1-model.dart';
 import '../../style.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class Paragraph1 extends StatelessWidget {
   final Paragraph _paragraph = new Paragraph();
